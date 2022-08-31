@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {             /* Selector descendiente*/
+            color:yellow;
+        }
+        div > div {         /* Selector hijo directo*/
+            color: blue;
+        }
+        div + section{      /* Selector elemento adyacente*/
+            color:red;
+        }
+        div ~ p {           /* Selector general de hermanos*/
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+    <div>
+       <p>Platzi</p>
+       <div>Es</div>
+       <p>Increíble</p>
+    </div>
+    <section>si</section>
+    <section>o no?</section>
+    <p>Que opinas?</p>
+</body>
+</html>
