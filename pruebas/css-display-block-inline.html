@@ -9,22 +9,28 @@
         body {
             margin: 0;
         }
-        div {                        /*Display de bloque*/
+        div {                   /*Display block*/
             background: salmon;
             width: 200px;
             height: 200px;
             margin: 20px;
         }
-        a {                         /*Display de línea*/
+        a {                     /*Display inline*/
             background: skyblue;
-            width: 200px;           /*No lo acepta*/
-            height: 200px;          /*No lo acepta*/
-            margin: 20px;
+            width: 150px;       /*No lo acepta*/
+            height: 150px;      /*No lo acepta*/
+            margin: 15px;       /*No lo acepta arriba y abajo*/
+        }
+        button {                /*Display inline-block*/
+            background: slateblue;
+            width: 100px;
+            height: 100px;
         }
     </style>
 </head>
 <body>
     <div>bloque</div>
     <a href="/">inline</a>
+    <button>inline block</button>
 </body>
 </html>
