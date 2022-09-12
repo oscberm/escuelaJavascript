@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;       /*Se debe colocar en el contenedor*/
+            background: papayawhip;
+            /*justify-content: space-between; /*adiciona espaciado*/
+            justify-content: center; /*centra según eje de direction*/
+            align-items: center;     /*centra según eje de direction*/
+            height: 300px;
+            flex-direction: column;  /*cambia eje: row o column*/
+        }
+
+        .item {
+            width: 30px;
+            height: 30px;
+            background: purple;
+        }
+        .container .item:nth-child(2n + 1) { /*elementos impares*/
+            background: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

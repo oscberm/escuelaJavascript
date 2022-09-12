@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 100%; display: flex;
+            justify-content: center;   /*centra la caja*/
+        }
+        .card {
+            width: 300px; height: 500px;
+            background: papayawhip;
+            border-radius: 20px;
+            overflow: hidden; /*mantiene el borde visible*/
+        }
+        .card img {     /*la imagen toma el 100% de la tarjeta*/
+            width: 100%;
+        }
+        .card p {
+            text-align: center; /*centra el texto de la tarjeta*/
+        }
+        .card p:nth-child(3) {  /*color al tercer hijo de la tarjeta*/
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/10048609/pexels-photo-10048609.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Milan">
+            <p>Milan: Lugar turistico</p>
+            <p>¿Cuál será?</p>
+        </div>
+    </section>
+</body>
+</html>
