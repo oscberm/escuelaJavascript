@@ -6,14 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html {
+            font-size: 6.25%; /*cálculo para que 1rem = 1px (y no 16px)*/
+        }
         div {
-            width: 100px;
+            width: 100px;     /*px es una medida absoluta*/
             height: 100px;
             background: pink;
+            font-size: 20rem; /*rem es una medida relativa*/
+        }
+        p {
+            font-size: 20rem; /*tamaño de la letra (20px)*/
+        }
+        .container {
+            width: 30vw;  /*u. relativa: Visualiza a lo ancho*/
+            height: 30vh; /*u. relativa: Visualiza a lo alto*/
+            background: plum;
         }
     </style>
 </head>
 <body>
     <div>Platzi</div>
+    <p>Master</p>
+    <div class="container"></div>
 </body>
 </html>
